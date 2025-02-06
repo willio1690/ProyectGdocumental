@@ -1,0 +1,2476 @@
+<!DOCTYPE html>
+<!-- saved from url=(0130)http://localhost/phpmyadmin/index.php?route=/database/data-dictionary&db=entry_mc&goto=index.php%3Froute%3D%2Fdatabase%2Fstructure -->
+<html lang="es" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+  <link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="./DicionariodeDatos_files/print.css">
+    <title>Vista de impresión - phpMyAdmin 5.1.3</title>
+    <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery.min.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery-migrate.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/sprintf.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/ajax.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/keyhandler.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/bootstrap.bundle.min.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery-ui.min.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/js.cookie.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery.mousewheel.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery.validate.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery-ui-timepicker-addon.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery.ba-hashchange-2.0.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/jquery.debounce-1.0.6.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/menu_resizer.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/cross_framing_protection.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/rte.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/messages.php"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/config.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/doclinks.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/functions.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/navigation.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/indexes.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/common.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/page_settings.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/codemirror.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/sql.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/runmode.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/show-hint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/sql-hint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/lint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/sql-lint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/tracekit.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/error_report.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/drag_drop_import.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/shortcuts_handler.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./DicionariodeDatos_files/console.js.descarga"></script>
+
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"es",server:"1",table:"",db:"entry_mc",token:"403b553c5e5e483b7078423f7a454a47",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Examinar",pma_text_left_default_tab:"Estructura",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.3",auth_type:"config",user:"root"});
+var firstDayOfCalendar = '0';
+var themeImagePath = '.\/themes\/metro\/img\/';
+var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
+var maxInputVars = 1000;
+
+if ($.datepicker) {
+  $.datepicker.regional[''].closeText = 'Terminado';
+  $.datepicker.regional[''].prevText = 'Prev';
+  $.datepicker.regional[''].nextText = 'Next';
+  $.datepicker.regional[''].currentText = 'Hoy';
+  $.datepicker.regional[''].monthNames = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ];
+  $.datepicker.regional[''].monthNamesShort = [
+    'Ene',
+    'Feb',
+    'Mar',
+    'Abr',
+    'Mayo',
+    'Jun',
+    'Jul',
+    'Ago',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dic',
+  ];
+  $.datepicker.regional[''].dayNames = [
+    'Domingo',
+    'Lunes',
+    'Martes',
+    'Mi\u00E9rcoles',
+    'Jueves',
+    'Viernes',
+    'S\u00E1bado',
+  ];
+  $.datepicker.regional[''].dayNamesShort = [
+    'Dom',
+    'Lun',
+    'Mar',
+    'Mie',
+    'Jue',
+    'Vie',
+    'Sab',
+  ];
+  $.datepicker.regional[''].dayNamesMin = [
+    'Do',
+    'Lu',
+    'Ma',
+    'Mi',
+    'Ju',
+    'Vi',
+    'Sa',
+  ];
+  $.datepicker.regional[''].weekHeader = 'Sem';
+  $.datepicker.regional[''].showMonthAfterYear = true;
+  $.datepicker.regional[''].yearSuffix = '';
+  $.extend($.datepicker._defaults, $.datepicker.regional['']);
+}
+
+if ($.timepicker) {
+  $.timepicker.regional[''].timeText = 'Tiempo';
+  $.timepicker.regional[''].hourText = 'Hora';
+  $.timepicker.regional[''].minuteText = 'Minuto';
+  $.timepicker.regional[''].secondText = 'Segundo';
+  $.extend($.timepicker._defaults, $.timepicker.regional['']);
+}
+
+function extendingValidatorMessages () {
+  $.extend($.validator.messages, {
+    required: 'Este\u0020campo\u0020es\u0020requerido',
+    remote: 'Corrige\u0020este\u0020campo',
+    email: 'Ingrese\u0020un\u0020correo\u0020electr\u00F3nico\u0020v\u00E1lido',
+    url: 'Ingrese\u0020una\u0020URL\u0020v\u00E1lida',
+    date: 'Ingrese\u0020una\u0020fecha\u0020v\u00E1lida',
+    dateISO: 'Ingrese\u0020una\u0020fecha\u0020\u0028\u0020ISO\u0020\u0029\u0020v\u00E1lida',
+    number: 'Ingrese\u0020un\u0020n\u00FAmero\u0020v\u00E1lido',
+    creditcard: 'Ingrese\u0020un\u0020n\u00FAmero\u0020de\u0020tarjeta\u0020de\u0020cr\u00E9dito\u0020valido',
+    digits: 'Ingrese\u0020solo\u0020d\u00EDgitos',
+    equalTo: 'Ingrese\u0020el\u0020mismo\u0020valor\u0020de\u0020nuevo',
+    maxlength: $.validator.format('Ingrese\u0020no\u0020m\u00E1s\u0020de\u0020\u007B0\u007D\u0020caracteres'),
+    minlength: $.validator.format('Ingrese\u0020al\u0020menos\u0020\u007B0\u007D\u0020caracteres'),
+    rangelength: $.validator.format('Ingrese\u0020un\u0020valor\u0020entre\u0020\u007B0\u007D\u0020y\u0020\u007B1\u007D\u0020caracteres\u0020de\u0020largo'),
+    range: $.validator.format('Ingrese\u0020un\u0020valor\u0020entre\u0020\u007B0\u007D\u0020y\u0020\u007B1\u007D'),
+    max: $.validator.format('Ingrese\u0020un\u0020valor\u0020menor\u0020o\u0020igual\u0020a\u0020\u007B0\u007D'),
+    min: $.validator.format('Ingrese\u0020un\u0020valor\u0020mayor\u0020o\u0020igual\u0020a\u0020\u007B0\u007D'),
+    validationFunctionForDateTime: $.validator.format('Ingrese\u0020una\u0020fecha\u0020u\u0020hora\u0020v\u00E1lida'),
+    validationFunctionForHex: $.validator.format('Ingrese\u0020una\u0020entrada\u0020HEX\u0020v\u00E1lida'),
+    validationFunctionForMd5: $.validator.format('Esta\u0020columna\u0020no\u0020puede\u0020contener\u0020un\u0020valor\u0020de\u002032\u0020caracteres'),
+    validationFunctionForAesDesEncrypt: $.validator.format('Estas\u0020funciones\u0020est\u00E1n\u0020pensadas\u0020para\u0020devolver\u0020un\u0020resultado\u0020binario\u003B\u0020para\u0020evitar\u0020resultados\u0020inconsistentes,\u0020debe\u0020almacenarlo\u0020en\u0020una\u0020columna\u0020BINARY,\u0020VARBINARY\u0020o\u0020BLOB.')
+  });
+}
+
+ConsoleEnterExecutes=false
+
+AJAX.scriptHandler
+  .add('vendor/jquery/jquery.min.js', 0)
+  .add('vendor/jquery/jquery-migrate.js', 0)
+  .add('vendor/sprintf.js', 1)
+  .add('ajax.js', 0)
+  .add('keyhandler.js', 1)
+  .add('vendor/bootstrap/bootstrap.bundle.min.js', 1)
+  .add('vendor/jquery/jquery-ui.min.js', 0)
+  .add('vendor/js.cookie.js', 1)
+  .add('vendor/jquery/jquery.mousewheel.js', 0)
+  .add('vendor/jquery/jquery.validate.js', 0)
+  .add('vendor/jquery/jquery-ui-timepicker-addon.js', 0)
+  .add('vendor/jquery/jquery.ba-hashchange-2.0.js', 0)
+  .add('vendor/jquery/jquery.debounce-1.0.6.js', 0)
+  .add('menu_resizer.js', 1)
+  .add('cross_framing_protection.js', 0)
+  .add('rte.js', 1)
+  .add('messages.php', 0)
+  .add('config.js', 1)
+  .add('doclinks.js', 1)
+  .add('functions.js', 1)
+  .add('navigation.js', 1)
+  .add('indexes.js', 1)
+  .add('common.js', 1)
+  .add('page_settings.js', 1)
+  .add('vendor/codemirror/lib/codemirror.js', 0)
+  .add('vendor/codemirror/mode/sql/sql.js', 0)
+  .add('vendor/codemirror/addon/runmode/runmode.js', 0)
+  .add('vendor/codemirror/addon/hint/show-hint.js', 0)
+  .add('vendor/codemirror/addon/hint/sql-hint.js', 0)
+  .add('vendor/codemirror/addon/lint/lint.js', 0)
+  .add('codemirror/addon/lint/sql-lint.js', 0)
+  .add('vendor/tracekit.js', 1)
+  .add('error_report.js', 1)
+  .add('drag_drop_import.js', 1)
+  .add('shortcuts_handler.js', 1)
+  .add('console.js', 1)
+;
+$(function() {
+        AJAX.fireOnload('vendor/sprintf.js');
+        AJAX.fireOnload('keyhandler.js');
+      AJAX.fireOnload('vendor/bootstrap/bootstrap.bundle.min.js');
+        AJAX.fireOnload('vendor/js.cookie.js');
+                AJAX.fireOnload('menu_resizer.js');
+        AJAX.fireOnload('rte.js');
+        AJAX.fireOnload('config.js');
+      AJAX.fireOnload('doclinks.js');
+      AJAX.fireOnload('functions.js');
+      AJAX.fireOnload('navigation.js');
+      AJAX.fireOnload('indexes.js');
+      AJAX.fireOnload('common.js');
+      AJAX.fireOnload('page_settings.js');
+                    AJAX.fireOnload('vendor/tracekit.js');
+      AJAX.fireOnload('error_report.js');
+      AJAX.fireOnload('drag_drop_import.js');
+      AJAX.fireOnload('shortcuts_handler.js');
+      AJAX.fireOnload('console.js');
+  });
+// ]]>
+</script>
+
+  <noscript><style>html{display:block}</style></noscript>
+</head>
+<body>
+  
+  
+  
+
+  
+      <noscript>
+      <div class="alert alert-danger" role="alert">
+  <img src="themes/dot.gif" title="" alt="" class="icon ic_s_error"> ¡Pasado este punto, debe tener Javascript activado!
+</div>
+
+    </noscript>
+  
+  
+  
+
+  <div id="page_content">
+    
+
+    
+<h1>entry_mc</h1>
+
+<div>
+      <div>
+      <h2>estados_registros</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Estado_Registro
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Estado_Registro
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(20)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Estado_Registro
+                                          </td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>estados_usuarios</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Estado_Usuario
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Estado
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Estado_Usuario
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>estados_vehiculo</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Estado_Vehiculo
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Estado
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Estado_Vehiculo
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>estado_ordenestrabajo</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Estado_Orden
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_EstadoOrden
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(20)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Estado_Orden
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>estado_roles</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Estado_Rol
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Estado
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(20)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Estado_Rol
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>orden_trabajo</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Orden_Trabajo
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>vehiculos -&gt; Id_Vehiculo</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Codigo_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Placa
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(6)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Marca
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Modelo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(4)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              LLantas
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Ventanas
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Asignar
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>usuarios -&gt; Id_Usuario</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Luces
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Retrovisores
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Rayones
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Tipo_Mantemiento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>tipos_mantenimiento -&gt; Id_Tipo_Mantenimiento</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Observaciones
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(250)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Fecha_Orden_Trabajo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              datetime
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Estado_Orden_Trabajo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>estado_ordenestrabajo -&gt; Id_Estado_Orden</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Orden_Trabajo
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Id_Vehiculo</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Vehiculo
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Asignar</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Asignar
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Tipo_Mantemiento</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Tipo_Mantemiento
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Estado_Orden_Trabajo</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Estado_Orden_Trabajo
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>permisos</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Permiso
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Permiso
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(50)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Rol_Permiso
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>roles -&gt; Id_Rol</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Permiso
+                                          </td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Rol_Permiso</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Rol_Permiso
+                                          </td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>registro_entrada</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Registro_Entrada
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>vehiculos -&gt; Id_Vehiculo</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Codigo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Placa
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(6)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Marca
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Modelo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(4)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Estado_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Observaciones
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(350)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Fecha_Registro_Entrada
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              datetime
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Registro_Entrada
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">registro_entrada_ibfk_1</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Vehiculo
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>registro_salida</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Registro_Salida
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>vehiculos -&gt; Id_Vehiculo</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Codigo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Placa
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(6)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Marca
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Modelo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(4)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Estado_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>vehiculos -&gt; Estado_Vehiculo</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Observaciones
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(350)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Fecha_Registro_Salida
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Registro_Salida
+                                          </td>
+                    <td>30</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Id_Vehiculo</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Vehiculo
+                                          </td>
+                    <td>30</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Estado_Vehiculo</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Estado_Vehiculo
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>roles</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Rol
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Rol
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(20)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Descripcion_Rol
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(250)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Estado_Rol
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>estado_roles -&gt; Id_Estado_Rol</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Rol
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Estado_Rol</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Estado_Rol
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>tipos_mantenimiento</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Tipo_Mantenimiento
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Mantenimiento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(20)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Tipo_Mantenimiento
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>tipos_vehiculo</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Tipo_Vehiculo
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Tipo_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Tipo_Vehiculo
+                                          </td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>tipo_documentos</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Tipo_Documento
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Documento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Tipo_Documento
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>usuarios</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Usuario
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Nombre_Usuario
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Apellido_Usuario
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Tipo_Documento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>tipo_documentos -&gt; Id_Tipo_Documento</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Numero_Documento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Direccion
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(65)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Correo_Electronico
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(30)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Celular
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(15)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Rol
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>roles -&gt; Id_Rol</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Estado_Usuario
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>estados_usuarios -&gt; Id_Estado_Usuario</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Login
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(15)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Password
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(20)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Usuario
+                                          </td>
+                    <td>11</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Login</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Login
+                                          </td>
+                    <td>11</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Tipo_Documento</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Tipo_Documento
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Estado_Usuario</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Estado_Usuario
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Id_Rol</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Rol
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>vehiculos</h2>
+      
+      <table class="pma-table print">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                      <th>Enlaces a</th>
+                    <th>Comentarios</th>
+                      <th>Media type</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              Id_Vehiculo
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Codigo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Placa
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(6)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Marca
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(10)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Modelo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(4)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Color
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(25)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Tipo_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>tipos_vehiculo -&gt; Id_Tipo_Vehiculo</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Velocidad_MAX
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(20)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                          <td></td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Estado_Vehiculo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int(11)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                          <td>estados_vehiculo -&gt; Id_Estado_Vehiculo</td>
+                        <td></td>
+                          <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Id_Vehiculo
+                                          </td>
+                    <td>30</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Tipo_Vehiculo</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Tipo_Vehiculo
+                                          </td>
+                    <td>6</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">Estado_Vehiculo</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      Estado_Vehiculo
+                                          </td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+  </div>
+
+<p class="print_ignore">
+  <input type="button" class="btn btn-secondary button" id="print" value="Imprimir">
+</p>
+  </div>
+  <div id="selflink" class="print_ignore"><a href="http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fdata-dictionary&amp;db=entry_mc&amp;server=1" title="Abrir nueva ventana de phpMyAdmin" target="_blank" rel="noopener noreferrer"><img src="./DicionariodeDatos_files/dot.gif" title="Abrir nueva ventana de phpMyAdmin" alt="Abrir nueva ventana de phpMyAdmin" class="icon ic_window-new"></a></div>
+
+  <div class="clearfloat" id="pma_errors">
+    
+  </div>
+
+  
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+var debugSQLInfo = 'null';
+
+// ]]>
+</script>
+
+
+  
+  
+  
+
+</body></html>
